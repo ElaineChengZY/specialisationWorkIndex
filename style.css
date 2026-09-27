@@ -137,3 +137,40 @@ footer {
 @media (width < 600px) {
 
 }
+.commit-log {
+    margin-top: 1.5rem;
+}
+
+.commit-log summary {
+    cursor: pointer;
+    font-weight: bold;
+    margin-bottom: 1rem;
+}
+
+.table-wrapper {
+    overflow-x: auto;
+    margin-top: 1rem;
+}
+
+.commit-log table {
+    width: 100%;
+    border-collapse: collapse;
+    font-size: 0.9rem;
+}
+
+.commit-log th,
+.commit-log td {
+    padding: 0.75rem;
+    border: 1px solid #ccc;
+    text-align: left;
+    vertical-align: top;
+}
+
+.commit-log th {
+    font-weight: bold;
+}
+
+.form-link {
+   display: flex;
+   justify-content: center;
+}

@@ -40,37 +40,1753 @@
             <section id="intro-section">
                 <h3 class="firstSectionHeading">Information Design Prototypes</h3>
                 <p>
-                 My project explores a browser-based musical garden for young children with limited language skills. The interaction is designed to support musical exploration without requiring written instructions or technical music controls. For my parallel prototypes, I explored two design areas: visual feedback and Spatial Input. These areas are connected to the project values of Playfulness, Curiosity, and Accessibility.                </p>
-            </section>
-            <section>
-                <h4>Design Area 1: Visual Feedback</h4>
-                <p>
-                  My first area of exploration is visual feedback in the musical garden. Since the interface is designed for young children with limited language skills, the interaction needs to communicate clearly without relying on written instructions. Visual feedback can help children recognise that their action has caused a response and connect what they see with what they hear.
-                <p>
-                  I am concerned with several aspects of the feedback design. Firstly, noticeability — whether the visual response is clear enough for young children to recognise that something has happened. Secondly, cause and effect — whether pressing a garden element creates an immediate and understandable connection between the action, the visual response, and the sound. I am also interested in playfulness, because the feedback should encourage curiosity and repeated exploration without becoming distracting or visually overwhelming.
-                </p> 
-                <p>
-                    To explore these possibilities, I developed three parallel prototypes using scale feedback, glow feedback, and musical note feedback. The basic sound interaction remains consistent across the prototypes while the form of visual feedback changes. This allows each prototype to investigate a different way of communicating interaction while keeping the main interaction consistent.
-                </p>
-                <h4>
-                    <a href ="https://feedback-exploration-scale.github.io/musicfortoddlers/" target="_blank">
-                        Prototype 1: Scale Feedback
-                    </a>
-                </h4>
-                <p>
-                    This prototype explores scale as a form of immediate visual feedback. When the garden object is pressed, it becomes larger while producing sound. The change in size creates a visible response directly on the object being interacted with, which may help young children connect their action with the resulting sound.
-                    Scale feedback is worth exploring because it does not introduce an additional visual element to the interface. Instead, the garden object itself responds to the child's action. This keeps the feedback closely connected to the interaction and may support a simple cause-and-effect relationship without requiring written explanation.
-                </p>
-                <h4>
-                    <a href="https://feedback-exploration-glow.github.io/musicfortoddlers/" target="_blank">
-                        Prototype 2: Glow Feedback
-                    </a>
-                </h4>
-                <p>
-                    This prototype explores glow as a way of highlighting interaction. When the garden object is pressed, a glow appears around it while the sound is playing. Unlike scale feedback, the size of the object remains the same and the visual response is communicated through a change in its appearance.
-Glow feedback allows me to explore whether highlighting an object can make its interactive state noticeable without changing its shape or position. The visual effect may also contribute to the playful and magical character of the musical garden while still providing immediate feedback that the child's action has activated the object.
+                 My project explores a browser-based musical garden designed for toddlers and young children
+                 with limited language skills. The interface uses familiar garden objects and direct interaction
+                 instead of written instructions or technical music controls. Children can press and hold a
+                 flower to produce sound, or drag it towards a matching shadow while exploring how movement
+                 changes the sound.
                 </p>
 
+                <p>
+                 For my parallel prototypes, I explored two design areas: Visual Feedback and Spatial Input.
+                 Visual Feedback investigates how changes such as scale, glow and animated musical notes can
+                 communicate that an object has been activated. Spatial Input explores how dragging the flower
+                 through the interface can control different sound qualities such as pitch, volume and timbre.
+                </p>
+
+                <p>
+                 These design areas connect to the project values of Playfulness, Curiosity and Accessibility.
+                 The prototypes allow different interaction approaches to be compared while keeping the main
+                 task and interface consistent, helping me investigate how the musical garden can support
+                 understandable and playful sound exploration.
+                </p>
+            </section>
+
+            <section>
+                <h3>Design Area 1: Visual Feedback</h3>
+                <p>
+                 My first design area explores how visual feedback can communicate interaction in the musical
+                 garden without relying on written instructions. When the flower is pressed and produces sound,
+                 the visual response should be noticeable and help create a clear connection between the child's
+                 action, the visual change and the sound.
+                </p>
+
+                <p>
+                 I focused on noticeability, cause and effect, interaction states and playfulness. The feedback
+                 should make it clear when the flower is active and when the interaction has ended, while also
+                 encouraging curiosity without becoming distracting. To explore this, I developed three parallel
+                 prototypes: Scale Feedback, Glow Feedback and Musical Note Feedback, while keeping the flower,
+                 sound interaction and basic interface consistent.
+                </p>
+
+                  <h4>
+                    <a href="https://feedback-exploration-glow.github.io/musicfortoddlers/" target="_blank">
+                        Prototype 1: Glow Feedback
+                    </a>
+                </h4>
+                <p>
+                 This prototype uses glow to communicate that the flower is active. When the flower is pressed and held, a glow appears around it while the sound is playing. This explores whether visual highlighting can clearly show the active state without changing the flower's size or position.
+                </p>
+
+                <details>   
+                     <summary>Commit Logs</summary>
+                     <table>
+
+    <thead><tr>
+
+        <th>Author</th>
+        <th>Date</th>
+        <th>Subject</th>
+        <th>Body</th>
+
+    </tr></thead>
+
+    <tbody>
+
+      <tr>
+
+        <td>ElaineChengZY</td>
+        <td>Wed Aug 26 16:06:28 2026 +1000</td>
+        <td>Initial commit</td>
+        <td></td>
+
+      </tr>
+
+      <tr>
+
+        <td>ElaineChengZY</td>
+        <td>Thu Aug 27 14:47:53 2026 +1000</td>
+        <td>building/ set up</td>
+        <td></td>
+
+      </tr>
+
+      <tr>
+
+        <td>ElaineChengZY</td>
+        <td>Thu Aug 27 14:52:10 2026 +1000</td>
+        <td>overwrite</td>
+        <td></td>
+
+      </tr>
+
+      <tr>
+
+        <td>ElaineChengZY</td>
+        <td>Sat Aug 29 23:34:26 2026 +1000</td>
+        <td>Set up dialog and button</td>
+        <td>Start the D4 note on mousedown and release it on mouseup or mouseleave.</td>
+
+      </tr>
+
+      <tr>
+
+        <td>ElaineChengZY</td>
+        <td>Sun Aug 30 00:04:10 2026 +1000</td>
+        <td>add scale hover feedback for prototype 1</td>
+        <td></td>
+
+      </tr>
+
+      <tr>
+
+        <td>ElaineChengZY</td>
+        <td>Sun Aug 30 00:05:40 2026 +1000</td>
+        <td>update</td>
+        <td></td>
+
+      </tr>
+
+      <tr>
+
+        <td>1.2 pressed scale;</td>
+        <td>undefined</td>
+        <td>undefined</td>
+        <td>undefined</td>
+
+      </tr>
+
+      <tr>
+
+        <td>ElaineChengZY</td>
+        <td>Sun Aug 30 14:54:43 2026 +1000</td>
+        <td>add scale feedback</td>
+        <td>1.3 hover scale;</td>
+
+      </tr>
+
+      <tr>
+
+        <td>ElaineChengZY</td>
+        <td>Sun Aug 30 14:59:58 2026 +1000</td>
+        <td>rename</td>
+        <td></td>
+
+      </tr>
+
+      <tr>
+
+        <td>ElaineChengZY</td>
+        <td>Sun Aug 30 15:17:03 2026 +1000</td>
+        <td>glow feedback for prototype2</td>
+        <td></td>
+
+      </tr>
+
+      <tr>
+
+        <td>ElaineChengZY</td>
+        <td>Sun Aug 30 15:23:25 2026 +1000</td>
+        <td>rearrange file structure</td>
+        <td></td>
+
+      </tr>
+
+      <tr>
+
+        <td>ElaineChengZY</td>
+        <td>Sun Aug 30 15:31:54 2026 +1000</td>
+        <td>complete lift and shadow feedback</td>
+        <td></td>
+
+      </tr>
+
+      <tr>
+
+        <td>ElaineChengZY</td>
+        <td>Sun Aug 30 16:54:31 2026 +1000</td>
+        <td>map whole-page horizontal movement to pitch</td>
+        <td></td>
+
+      </tr>
+
+      <tr>
+
+        <td>ElaineChengZY</td>
+        <td>Sun Aug 30 17:12:16 2026 +1000</td>
+        <td>replace lift feedback with musical note feedback</td>
+        <td></td>
+
+      </tr>
+
+      <tr>
+
+        <td>ElaineChengZY</td>
+        <td>Sun Aug 30 22:31:25 2026 +1000</td>
+        <td>map whole-page vertical movement to volume</td>
+        <td></td>
+
+      </tr>
+
+      <tr>
+
+        <td>ElaineChengZY</td>
+        <td>Sun Aug 30 23:16:25 2026 +1000</td>
+        <td>map centre-to-edge movement to timbre</td>
+        <td></td>
+
+      </tr>
+
+      <tr>
+
+        <td>ElaineChengZY</td>
+        <td>Mon Aug 31 15:36:10 2026 +1000</td>
+        <td>updated</td>
+        <td></td>
+
+      </tr>
+
+      <tr>
+
+        <td>ElaineChengZY</td>
+        <td>Wed Sep 9 14:06:31 2026 +1000</td>
+        <td>trying branch 1</td>
+        <td></td>
+
+      </tr>
+
+      <tr>
+
+        <td>ElaineChengZY</td>
+        <td>Wed Sep 9 15:01:09 2026 +1000</td>
+        <td>create a glow feedback on button</td>
+        <td></td>
+
+      </tr>
+
+      <tr>
+
+        <td>ElaineChengZY</td>
+        <td>Wed Sep 9 15:02:47 2026 +1000</td>
+        <td>delete unused prototypes</td>
+        <td></td>
+
+      </tr>
+
+      <tr>
+
+        <td>ElaineChengZY</td>
+        <td>Wed Sep 9 15:35:23 2026 +1000</td>
+        <td>create a glow feedback</td>
+        <td></td>
+
+      </tr>
+
+      <tr>
+
+        <td>ElaineChengZY</td>
+        <td>Wed Sep 9 16:16:02 2026 +1000</td>
+        <td>Create commit_history.csv</td>
+        <td></td>
+
+      </tr>
+
+      <tr>
+
+        <td>ElaineChengZY</td>
+        <td>Mon Sep 14 17:10:55 2026 +1000</td>
+        <td>delete unused prototype</td>
+        <td></td>
+
+      </tr>
+
+      <tr>
+
+        <td>ElaineChengZY</td>
+        <td>Wed Sep 23 14:59:08 2026 +1000</td>
+        <td>Include text on page</td>
+        <td></td>
+
+      </tr>
+
+      <tr>
+
+        <td>ElaineChengZY</td>
+        <td>Sun Sep 27 13:37:21 2026 +1000</td>
+        <td>changing button to image</td>
+        <td></td>
+
+      </tr>
+
+    </tbody>
+
+</table>
+</details>
+
+                  <h4>
+                    <a href="https://feedback-exploration-notes.github.io/musicfortoddlers/" target="_blank">
+                        Prototype 2: Musical Note Feedback
+                    </a>
+                </h4>
+                <p>
+                 This prototype uses animated musical notes as continuous visual feedback. Notes appear while the flower is held and stop being generated when it is released. This explores whether animated feedback can make the interaction more playful and clearly communicate ongoing sound without becoming visually distracting.
+                </p>
+
+                <details>
+                    <summary>Commit Logs</summary>
+                    <table>
+
+    <thead><tr>
+
+        <th>Author</th>
+        <th>Date</th>
+        <th>Subject</th>
+        <th>Body</th>
+
+    </tr></thead>
+
+    <tbody>
+
+      <tr>
+
+        <td>ElaineChengZY</td>
+        <td>Wed Aug 26 16:06:28 2026 +1000</td>
+        <td>Initial commit</td>
+        <td></td>
+
+      </tr>
+
+      <tr>
+
+        <td>ElaineChengZY</td>
+        <td>Thu Aug 27 14:47:53 2026 +1000</td>
+        <td>building/ set up</td>
+        <td></td>
+
+      </tr>
+
+      <tr>
+
+        <td>ElaineChengZY</td>
+        <td>Thu Aug 27 14:52:10 2026 +1000</td>
+        <td>overwrite</td>
+        <td></td>
+
+      </tr>
+
+      <tr>
+
+        <td>ElaineChengZY</td>
+        <td>Sat Aug 29 23:34:26 2026 +1000</td>
+        <td>Set up dialog and button</td>
+        <td>Start the D4 note on mousedown and release it on mouseup or mouseleave.</td>
+
+      </tr>
+
+      <tr>
+
+        <td>ElaineChengZY</td>
+        <td>Sun Aug 30 00:04:10 2026 +1000</td>
+        <td>add scale hover feedback for prototype 1</td>
+        <td></td>
+
+      </tr>
+
+      <tr>
+
+        <td>ElaineChengZY</td>
+        <td>Sun Aug 30 00:05:40 2026 +1000</td>
+        <td>update</td>
+        <td></td>
+
+      </tr>
+
+      <tr>
+
+        <td>1.2 pressed scale;</td>
+        <td>undefined</td>
+        <td>undefined</td>
+        <td>undefined</td>
+
+      </tr>
+
+      <tr>
+
+        <td>ElaineChengZY</td>
+        <td>Sun Aug 30 14:54:43 2026 +1000</td>
+        <td>add scale feedback</td>
+        <td>1.3 hover scale;</td>
+
+      </tr>
+
+      <tr>
+
+        <td>ElaineChengZY</td>
+        <td>Sun Aug 30 14:59:58 2026 +1000</td>
+        <td>rename</td>
+        <td></td>
+
+      </tr>
+
+      <tr>
+
+        <td>ElaineChengZY</td>
+        <td>Sun Aug 30 15:17:03 2026 +1000</td>
+        <td>glow feedback for prototype2</td>
+        <td></td>
+
+      </tr>
+
+      <tr>
+
+        <td>ElaineChengZY</td>
+        <td>Sun Aug 30 15:23:25 2026 +1000</td>
+        <td>rearrange file structure</td>
+        <td></td>
+
+      </tr>
+
+      <tr>
+
+        <td>ElaineChengZY</td>
+        <td>Sun Aug 30 15:31:54 2026 +1000</td>
+        <td>complete lift and shadow feedback</td>
+        <td></td>
+
+      </tr>
+
+      <tr>
+
+        <td>ElaineChengZY</td>
+        <td>Sun Aug 30 16:54:31 2026 +1000</td>
+        <td>map whole-page horizontal movement to pitch</td>
+        <td></td>
+
+      </tr>
+
+      <tr>
+
+        <td>ElaineChengZY</td>
+        <td>Sun Aug 30 17:12:16 2026 +1000</td>
+        <td>replace lift feedback with musical note feedback</td>
+        <td></td>
+
+      </tr>
+
+      <tr>
+
+        <td>ElaineChengZY</td>
+        <td>Sun Aug 30 22:31:25 2026 +1000</td>
+        <td>map whole-page vertical movement to volume</td>
+        <td></td>
+
+      </tr>
+
+      <tr>
+
+        <td>ElaineChengZY</td>
+        <td>Sun Aug 30 23:16:25 2026 +1000</td>
+        <td>map centre-to-edge movement to timbre</td>
+        <td></td>
+
+      </tr>
+
+      <tr>
+
+        <td>ElaineChengZY</td>
+        <td>Mon Aug 31 15:36:10 2026 +1000</td>
+        <td>updated</td>
+        <td></td>
+
+      </tr>
+
+      <tr>
+
+        <td>ElaineChengZY</td>
+        <td>Wed Sep 9 15:03:48 2026 +1000</td>
+        <td>delete unused prototype</td>
+        <td></td>
+
+      </tr>
+
+      <tr>
+
+        <td>ElaineChengZY</td>
+        <td>Wed Sep 9 15:17:45 2026 +1000</td>
+        <td>delete unused prototype</td>
+        <td></td>
+
+      </tr>
+
+      <tr>
+
+        <td>ElaineChengZY</td>
+        <td>Wed Sep 9 15:30:46 2026 +1000</td>
+        <td>fixing on main</td>
+        <td></td>
+
+      </tr>
+
+      <tr>
+
+        <td>ElaineChengZY</td>
+        <td>Wed Sep 9 16:04:51 2026 +1000</td>
+        <td>update</td>
+        <td></td>
+
+      </tr>
+
+      <tr>
+
+        <td>ElaineChengZY</td>
+        <td>Wed Sep 9 16:43:51 2026 +1000</td>
+        <td>Changing the title from main to branch 2</td>
+        <td></td>
+
+      </tr>
+
+      <tr>
+
+        <td>ElaineChengZY</td>
+        <td>Wed Sep 9 16:49:36 2026 +1000</td>
+        <td>create a musical note feedback</td>
+        <td></td>
+
+      </tr>
+
+      <tr>
+
+        <td>ElaineChengZY</td>
+        <td>Wed Sep 9 16:51:02 2026 +1000</td>
+        <td>fixing</td>
+        <td></td>
+
+      </tr>
+
+      <tr>
+
+        <td>ElaineChengZY</td>
+        <td>Wed Sep 9 16:51:41 2026 +1000</td>
+        <td>delete unused prototype</td>
+        <td></td>
+
+      </tr>
+
+      <tr>
+
+        <td>ElaineChengZY</td>
+        <td>Mon Sep 14 16:29:26 2026 +1000</td>
+        <td>Add continuous musical note feedback</td>
+        <td>Added multiple animated musical notes that continue appearing while the garden button is held.</td>
+
+      </tr>
+
+      <tr>
+
+        <td>ElaineChengZY</td>
+        <td>Mon Sep 14 18:04:28 2026 +1000</td>
+        <td>create git commit</td>
+        <td></td>
+
+      </tr>
+
+      <tr>
+
+        <td>ElaineChengZY</td>
+        <td>Sun Sep 27 13:51:17 2026 +1000</td>
+        <td>changing button to image</td>
+        <td></td>
+
+      </tr>
+
+    </tbody>
+
+</table>
+                </details>
+
+                <h4>
+                    <a href ="https://feedback-exploration-scale.github.io/musicfortoddlers/" target="_blank">
+                        Prototype 3: Scale Feedback
+                    </a>
+                </h4>
+                <p>
+                 This prototype uses scale as direct visual feedback. When the flower is pressed and held, it becomes larger while producing sound, then returns to its normal size when released. This explores whether changing the object itself creates a clear and immediate connection between the child's action, the visual response and the sound.
+                </p>
+
+                <details>
+                    <summary>Commit Logs</summary>
+                    <table>
+
+    <thead><tr>
+
+        <th>Author</th>
+        <th>Date</th>
+        <th>Subject</th>
+        <th>Body</th>
+
+    </tr></thead>
+
+    <tbody>
+
+      <tr>
+
+        <td>ElaineChengZY</td>
+        <td>Wed Aug 26 16:06:28 2026 +1000</td>
+        <td>Initial commit</td>
+        <td></td>
+
+      </tr>
+
+      <tr>
+
+        <td>ElaineChengZY</td>
+        <td>Thu Aug 27 14:47:53 2026 +1000</td>
+        <td>building/ set up</td>
+        <td></td>
+
+      </tr>
+
+      <tr>
+
+        <td>ElaineChengZY</td>
+        <td>Thu Aug 27 14:52:10 2026 +1000</td>
+        <td>overwrite</td>
+        <td></td>
+
+      </tr>
+
+      <tr>
+
+        <td>ElaineChengZY</td>
+        <td>Sat Aug 29 23:34:26 2026 +1000</td>
+        <td>Set up dialog and button</td>
+        <td>Start the D4 note on mousedown and release it on mouseup or mouseleave.</td>
+
+      </tr>
+
+      <tr>
+
+        <td>ElaineChengZY</td>
+        <td>Sun Aug 30 00:04:10 2026 +1000</td>
+        <td>add scale hover feedback for prototype 1</td>
+        <td></td>
+
+      </tr>
+
+      <tr>
+
+        <td>ElaineChengZY</td>
+        <td>Sun Aug 30 00:05:40 2026 +1000</td>
+        <td>update</td>
+        <td></td>
+
+      </tr>
+
+      <tr>
+
+        <td>1.2 pressed scale;</td>
+        <td>undefined</td>
+        <td>undefined</td>
+        <td>undefined</td>
+
+      </tr>
+
+      <tr>
+
+        <td>ElaineChengZY</td>
+        <td>Sun Aug 30 14:54:43 2026 +1000</td>
+        <td>add scale feedback</td>
+        <td>1.3 hover scale;</td>
+
+      </tr>
+
+      <tr>
+
+        <td>ElaineChengZY</td>
+        <td>Sun Aug 30 14:59:58 2026 +1000</td>
+        <td>rename</td>
+        <td></td>
+
+      </tr>
+
+      <tr>
+
+        <td>ElaineChengZY</td>
+        <td>Sun Aug 30 15:17:03 2026 +1000</td>
+        <td>glow feedback for prototype2</td>
+        <td></td>
+
+      </tr>
+
+      <tr>
+
+        <td>ElaineChengZY</td>
+        <td>Sun Aug 30 15:23:25 2026 +1000</td>
+        <td>rearrange file structure</td>
+        <td></td>
+
+      </tr>
+
+      <tr>
+
+        <td>ElaineChengZY</td>
+        <td>Sun Aug 30 15:31:54 2026 +1000</td>
+        <td>complete lift and shadow feedback</td>
+        <td></td>
+
+      </tr>
+
+      <tr>
+
+        <td>ElaineChengZY</td>
+        <td>Sun Aug 30 16:54:31 2026 +1000</td>
+        <td>map whole-page horizontal movement to pitch</td>
+        <td></td>
+
+      </tr>
+
+      <tr>
+
+        <td>ElaineChengZY</td>
+        <td>Sun Aug 30 17:12:16 2026 +1000</td>
+        <td>replace lift feedback with musical note feedback</td>
+        <td></td>
+
+      </tr>
+
+      <tr>
+
+        <td>ElaineChengZY</td>
+        <td>Sun Aug 30 22:31:25 2026 +1000</td>
+        <td>map whole-page vertical movement to volume</td>
+        <td></td>
+
+      </tr>
+
+      <tr>
+
+        <td>ElaineChengZY</td>
+        <td>Sun Aug 30 23:16:25 2026 +1000</td>
+        <td>map centre-to-edge movement to timbre</td>
+        <td></td>
+
+      </tr>
+
+      <tr>
+
+        <td>ElaineChengZY</td>
+        <td>Mon Aug 31 15:36:10 2026 +1000</td>
+        <td>updated</td>
+        <td></td>
+
+      </tr>
+
+      <tr>
+
+        <td>ElaineChengZY</td>
+        <td>Wed Sep 9 15:03:48 2026 +1000</td>
+        <td>delete unused prototype</td>
+        <td></td>
+
+      </tr>
+
+      <tr>
+
+        <td>ElaineChengZY</td>
+        <td>Wed Sep 9 15:17:45 2026 +1000</td>
+        <td>delete unused prototype</td>
+        <td></td>
+
+      </tr>
+
+      <tr>
+
+        <td>ElaineChengZY</td>
+        <td>Wed Sep 9 15:30:46 2026 +1000</td>
+        <td>fixing on main</td>
+        <td></td>
+
+      </tr>
+
+      <tr>
+
+        <td>ElaineChengZY</td>
+        <td>Wed Sep 9 16:04:51 2026 +1000</td>
+        <td>update</td>
+        <td></td>
+
+      </tr>
+
+      <tr>
+
+        <td>ElaineChengZY</td>
+        <td>Wed Sep 9 16:53:23 2026 +1000</td>
+        <td>change the title for the branch</td>
+        <td></td>
+
+      </tr>
+
+      <tr>
+
+        <td>ElaineChengZY</td>
+        <td>Wed Sep 9 19:21:29 2026 +1000</td>
+        <td>delete unused prototype and create scale feedback for branch 3</td>
+        <td></td>
+
+      </tr>
+
+      <tr>
+
+        <td>ElaineChengZY</td>
+        <td>Mon Sep 14 17:56:17 2026 +1000</td>
+        <td>create git commit</td>
+        <td></td>
+
+      </tr>
+
+      <tr>
+
+        <td>ElaineChengZY</td>
+        <td>Wed Sep 23 14:57:06 2026 +1000</td>
+        <td>include text on page</td>
+        <td></td>
+
+      </tr>
+
+      <tr>
+
+        <td>ElaineChengZY</td>
+        <td>Sat Sep 26 22:13:24 2026 +1000</td>
+        <td>changing button to picture</td>
+        <td></td>
+
+      </tr>
+
+      <tr>
+
+        <td>ElaineChengZY</td>
+        <td>Sat Sep 26 22:28:33 2026 +1000</td>
+        <td>changing button to picture</td>
+        <td></td>
+
+      </tr>
+
+      <tr>
+
+        <td>ElaineChengZY</td>
+        <td>Sat Sep 26 22:35:31 2026 +1000</td>
+        <td>adding hover effect and changing scale</td>
+        <td></td>
+
+      </tr>
+
+    </tbody>
+
+</table>
+                </details>
+            
+            <p>
+            <a class="form-link" href="https://forms.cloud.microsoft/Pages/ResponsePage.aspx?id=cTYy0b7NF0S01L2yS1Exa6qpoLxQgVVEtR8arKJ0MllURDkwUkpXN05YQktFMEI3S1gwT0lKMjRLNi4u" target="_blank">
+               Peer User Testing Form for Area 1
+            </a>
+            </p>
+
+            </section>
+
+            <section>
+                <h3>Design Area 2: Spatial Input</h3>
+                <p>
+                 My second design area explores Spatial Input and how movement can control sound without using
+                 technical music controls. In all three prototypes, the child drags a flower towards a matching
+                 shadow while movement changes the sound. The matching task remains consistent while the mapping
+                 changes: horizontal position controls pitch, vertical position controls volume, and distance
+                 from the centre controls timbre. This allows me to compare how understandable, predictable and
+                 exploratory each mapping is.
+                </p>
+
+                <h4>
+                    <a href="https://spatial-exploration-horizontal.github.io/musicfortoddlers/" target="_blank">
+                        Prototype 4: Horizontal - Pitch
+                    </a>
+                </h4>
+                <p>
+                    This prototype maps horizontal movement to pitch. The child drags the flower towards its matching shadow while moving left produces a lower pitch and moving right produces a higher pitch. This explores whether a simple directional mapping makes the relationship between movement and sound easy to discover.
+                </p>
+                <details>
+                    <summary>Commit Logs </summary>
+                        <table>
+
+    <thead><tr>
+
+        <th>Author</th>
+        <th>Date</th>
+        <th>Subject</th>
+        <th>Body</th>
+
+    </tr></thead>
+
+    <tbody>
+
+      <tr>
+
+        <td>ElaineChengZY</td>
+        <td>Wed Aug 26 16:06:28 2026 +1000</td>
+        <td>Initial commit</td>
+        <td></td>
+
+      </tr>
+
+      <tr>
+
+        <td>ElaineChengZY</td>
+        <td>Thu Aug 27 14:47:53 2026 +1000</td>
+        <td>building/ set up</td>
+        <td></td>
+
+      </tr>
+
+      <tr>
+
+        <td>ElaineChengZY</td>
+        <td>Thu Aug 27 14:52:10 2026 +1000</td>
+        <td>overwrite</td>
+        <td></td>
+
+      </tr>
+
+      <tr>
+
+        <td>ElaineChengZY</td>
+        <td>Sat Aug 29 23:34:26 2026 +1000</td>
+        <td>Set up dialog and button</td>
+        <td>Start the D4 note on mousedown and release it on mouseup or mouseleave.</td>
+
+      </tr>
+
+      <tr>
+
+        <td>ElaineChengZY</td>
+        <td>Sun Aug 30 00:04:10 2026 +1000</td>
+        <td>add scale hover feedback for prototype 1</td>
+        <td></td>
+
+      </tr>
+
+      <tr>
+
+        <td>ElaineChengZY</td>
+        <td>Sun Aug 30 00:05:40 2026 +1000</td>
+        <td>update</td>
+        <td></td>
+
+      </tr>
+
+      <tr>
+
+        <td>1.2 pressed scale;</td>
+        <td>undefined</td>
+        <td>undefined</td>
+        <td>undefined</td>
+
+      </tr>
+
+      <tr>
+
+        <td>ElaineChengZY</td>
+        <td>Sun Aug 30 14:54:43 2026 +1000</td>
+        <td>add scale feedback</td>
+        <td>1.3 hover scale;</td>
+
+      </tr>
+
+      <tr>
+
+        <td>ElaineChengZY</td>
+        <td>Sun Aug 30 14:59:58 2026 +1000</td>
+        <td>rename</td>
+        <td></td>
+
+      </tr>
+
+      <tr>
+
+        <td>ElaineChengZY</td>
+        <td>Sun Aug 30 15:17:03 2026 +1000</td>
+        <td>glow feedback for prototype2</td>
+        <td></td>
+
+      </tr>
+
+      <tr>
+
+        <td>ElaineChengZY</td>
+        <td>Sun Aug 30 15:23:25 2026 +1000</td>
+        <td>rearrange file structure</td>
+        <td></td>
+
+      </tr>
+
+      <tr>
+
+        <td>ElaineChengZY</td>
+        <td>Sun Aug 30 15:31:54 2026 +1000</td>
+        <td>complete lift and shadow feedback</td>
+        <td></td>
+
+      </tr>
+
+      <tr>
+
+        <td>ElaineChengZY</td>
+        <td>Sun Aug 30 16:54:31 2026 +1000</td>
+        <td>map whole-page horizontal movement to pitch</td>
+        <td></td>
+
+      </tr>
+
+      <tr>
+
+        <td>ElaineChengZY</td>
+        <td>Sun Aug 30 17:12:16 2026 +1000</td>
+        <td>replace lift feedback with musical note feedback</td>
+        <td></td>
+
+      </tr>
+
+      <tr>
+
+        <td>ElaineChengZY</td>
+        <td>Sun Aug 30 22:31:25 2026 +1000</td>
+        <td>map whole-page vertical movement to volume</td>
+        <td></td>
+
+      </tr>
+
+      <tr>
+
+        <td>ElaineChengZY</td>
+        <td>Sun Aug 30 23:16:25 2026 +1000</td>
+        <td>map centre-to-edge movement to timbre</td>
+        <td></td>
+
+      </tr>
+
+      <tr>
+
+        <td>ElaineChengZY</td>
+        <td>Mon Aug 31 15:36:10 2026 +1000</td>
+        <td>updated</td>
+        <td></td>
+
+      </tr>
+
+      <tr>
+
+        <td>ElaineChengZY</td>
+        <td>Wed Sep 9 15:03:48 2026 +1000</td>
+        <td>delete unused prototype</td>
+        <td></td>
+
+      </tr>
+
+      <tr>
+
+        <td>ElaineChengZY</td>
+        <td>Wed Sep 9 15:17:45 2026 +1000</td>
+        <td>delete unused prototype</td>
+        <td></td>
+
+      </tr>
+
+      <tr>
+
+        <td>ElaineChengZY</td>
+        <td>Wed Sep 9 15:30:46 2026 +1000</td>
+        <td>fixing on main</td>
+        <td></td>
+
+      </tr>
+
+      <tr>
+
+        <td>ElaineChengZY</td>
+        <td>Wed Sep 9 16:04:51 2026 +1000</td>
+        <td>update</td>
+        <td></td>
+
+      </tr>
+
+      <tr>
+
+        <td>ElaineChengZY</td>
+        <td>Wed Sep 9 17:19:49 2026 +1000</td>
+        <td>Update index.html</td>
+        <td></td>
+
+      </tr>
+
+      <tr>
+
+        <td>ElaineChengZY</td>
+        <td>Wed Sep 9 19:29:24 2026 +1000</td>
+        <td>delete unused prototype and create spatial input</td>
+        <td>control pitch in horizontal</td>
+
+      </tr>
+
+      <tr>
+
+        <td>ElaineChengZY</td>
+        <td>Wed Sep 9 19:51:40 2026 +1000</td>
+        <td>update title to branch 4</td>
+        <td></td>
+
+      </tr>
+
+      <tr>
+
+        <td>ElaineChengZY</td>
+        <td>Mon Sep 14 16:59:21 2026 +1000</td>
+        <td>Add draggable object to Spatial Horizontal</td>
+        <td></td>
+
+      </tr>
+
+      <tr>
+
+        <td>ElaineChengZY</td>
+        <td>Mon Sep 14 18:05:36 2026 +1000</td>
+        <td>create git commit</td>
+        <td></td>
+
+      </tr>
+
+      <tr>
+
+        <td>ElaineChengZY</td>
+        <td>Sat Sep 26 21:55:12 2026 +1000</td>
+        <td>changing button into picture</td>
+        <td></td>
+
+      </tr>
+
+      <tr>
+
+        <td>ElaineChengZY</td>
+        <td>Sat Sep 26 22:26:50 2026 +1000</td>
+        <td>fixed the size of the picture</td>
+        <td></td>
+
+      </tr>
+
+      <tr>
+
+        <td>ElaineChengZY</td>
+        <td>Sat Sep 26 22:30:17 2026 +1000</td>
+        <td>refined prototype-label style</td>
+        <td></td>
+
+      </tr>
+
+      <tr>
+
+        <td>ElaineChengZY</td>
+        <td>Sat Sep 26 22:32:08 2026 +1000</td>
+        <td>change the size of the object</td>
+        <td></td>
+
+      </tr>
+
+      <tr>
+
+        <td>ElaineChengZY</td>
+        <td>Sun Sep 27 14:26:33 2026 +1000</td>
+        <td>adding snap into shadow effect</td>
+        <td></td>
+
+      </tr>
+
+    </tbody>
+
+</table>
+                </details>
+                
+                <h4>
+                    <a href="https://spatial-exploration-vertical.github.io/musicfortoddlers/" target="_blank">
+                        Prototype 5: Vertical - Volume
+                    </a>
+                </h4>
+                <p>
+                    This prototype maps vertical movement to volume. Moving the flower higher makes the sound louder, while moving it lower makes the sound quieter. The same matching task is used so I can explore whether vertical movement provides a clear and understandable relationship with sound intensity.
+                </p>
+                <details>
+                    <summary>Commit Logs</summary>
+                    <table>
+
+    <thead><tr>
+
+        <th>Author</th>
+        <th>Date</th>
+        <th>Subject</th>
+        <th>Body</th>
+
+    </tr></thead>
+
+    <tbody>
+
+      <tr>
+
+        <td>ElaineChengZY</td>
+        <td>Wed Aug 26 16:06:28 2026 +1000</td>
+        <td>Initial commit</td>
+        <td></td>
+
+      </tr>
+
+      <tr>
+
+        <td>ElaineChengZY</td>
+        <td>Thu Aug 27 14:47:53 2026 +1000</td>
+        <td>building/ set up</td>
+        <td></td>
+
+      </tr>
+
+      <tr>
+
+        <td>ElaineChengZY</td>
+        <td>Thu Aug 27 14:52:10 2026 +1000</td>
+        <td>overwrite</td>
+        <td></td>
+
+      </tr>
+
+      <tr>
+
+        <td>ElaineChengZY</td>
+        <td>Sat Aug 29 23:34:26 2026 +1000</td>
+        <td>Set up dialog and button</td>
+        <td>Start the D4 note on mousedown and release it on mouseup or mouseleave.</td>
+
+      </tr>
+
+      <tr>
+
+        <td>ElaineChengZY</td>
+        <td>Sun Aug 30 00:04:10 2026 +1000</td>
+        <td>add scale hover feedback for prototype 1</td>
+        <td></td>
+
+      </tr>
+
+      <tr>
+
+        <td>ElaineChengZY</td>
+        <td>Sun Aug 30 00:05:40 2026 +1000</td>
+        <td>update</td>
+        <td></td>
+
+      </tr>
+
+      <tr>
+
+        <td>1.2 pressed scale;</td>
+        <td>undefined</td>
+        <td>undefined</td>
+        <td>undefined</td>
+
+      </tr>
+
+      <tr>
+
+        <td>ElaineChengZY</td>
+        <td>Sun Aug 30 14:54:43 2026 +1000</td>
+        <td>add scale feedback</td>
+        <td>1.3 hover scale;</td>
+
+      </tr>
+
+      <tr>
+
+        <td>ElaineChengZY</td>
+        <td>Sun Aug 30 14:59:58 2026 +1000</td>
+        <td>rename</td>
+        <td></td>
+
+      </tr>
+
+      <tr>
+
+        <td>ElaineChengZY</td>
+        <td>Sun Aug 30 15:17:03 2026 +1000</td>
+        <td>glow feedback for prototype2</td>
+        <td></td>
+
+      </tr>
+
+      <tr>
+
+        <td>ElaineChengZY</td>
+        <td>Sun Aug 30 15:23:25 2026 +1000</td>
+        <td>rearrange file structure</td>
+        <td></td>
+
+      </tr>
+
+      <tr>
+
+        <td>ElaineChengZY</td>
+        <td>Sun Aug 30 15:31:54 2026 +1000</td>
+        <td>complete lift and shadow feedback</td>
+        <td></td>
+
+      </tr>
+
+      <tr>
+
+        <td>ElaineChengZY</td>
+        <td>Sun Aug 30 16:54:31 2026 +1000</td>
+        <td>map whole-page horizontal movement to pitch</td>
+        <td></td>
+
+      </tr>
+
+      <tr>
+
+        <td>ElaineChengZY</td>
+        <td>Sun Aug 30 17:12:16 2026 +1000</td>
+        <td>replace lift feedback with musical note feedback</td>
+        <td></td>
+
+      </tr>
+
+      <tr>
+
+        <td>ElaineChengZY</td>
+        <td>Sun Aug 30 22:31:25 2026 +1000</td>
+        <td>map whole-page vertical movement to volume</td>
+        <td></td>
+
+      </tr>
+
+      <tr>
+
+        <td>ElaineChengZY</td>
+        <td>Sun Aug 30 23:16:25 2026 +1000</td>
+        <td>map centre-to-edge movement to timbre</td>
+        <td></td>
+
+      </tr>
+
+      <tr>
+
+        <td>ElaineChengZY</td>
+        <td>Mon Aug 31 15:36:10 2026 +1000</td>
+        <td>updated</td>
+        <td></td>
+
+      </tr>
+
+      <tr>
+
+        <td>ElaineChengZY</td>
+        <td>Wed Sep 9 15:03:48 2026 +1000</td>
+        <td>delete unused prototype</td>
+        <td></td>
+
+      </tr>
+
+      <tr>
+
+        <td>ElaineChengZY</td>
+        <td>Wed Sep 9 15:17:45 2026 +1000</td>
+        <td>delete unused prototype</td>
+        <td></td>
+
+      </tr>
+
+      <tr>
+
+        <td>ElaineChengZY</td>
+        <td>Wed Sep 9 15:30:46 2026 +1000</td>
+        <td>fixing on main</td>
+        <td></td>
+
+      </tr>
+
+      <tr>
+
+        <td>ElaineChengZY</td>
+        <td>Wed Sep 9 16:04:51 2026 +1000</td>
+        <td>update</td>
+        <td></td>
+
+      </tr>
+
+      <tr>
+
+        <td>ElaineChengZY</td>
+        <td>Wed Sep 9 17:19:49 2026 +1000</td>
+        <td>Update index.html</td>
+        <td></td>
+
+      </tr>
+
+      <tr>
+
+        <td>ElaineChengZY</td>
+        <td>Wed Sep 9 19:48:57 2026 +1000</td>
+        <td>delete unused prototype and create spatial vertical</td>
+        <td>vertical control volume</td>
+
+      </tr>
+
+      <tr>
+
+        <td>ElaineChengZY</td>
+        <td>Wed Sep 9 19:50:40 2026 +1000</td>
+        <td>update title for branch 5</td>
+        <td></td>
+
+      </tr>
+
+      <tr>
+
+        <td>ElaineChengZY</td>
+        <td>Mon Sep 14 16:54:37 2026 +1000</td>
+        <td>Add draggable object with viewport boundaries</td>
+        <td>Added click-and-drag interaction to the Spatial Vertical prototype.</td>
+
+      </tr>
+
+      <tr>
+
+        <td>ElaineChengZY</td>
+        <td>Mon Sep 14 18:00:47 2026 +1000</td>
+        <td>create git commit</td>
+        <td></td>
+
+      </tr>
+
+      <tr>
+
+        <td>ElaineChengZY</td>
+        <td>Wed Sep 23 15:03:37 2026 +1000</td>
+        <td>include text on page</td>
+        <td></td>
+
+      </tr>
+
+      <tr>
+
+        <td>ElaineChengZY</td>
+        <td>Sun Sep 27 15:05:00 2026 +1000</td>
+        <td>changing button to image</td>
+        <td></td>
+
+      </tr>
+
+      <tr>
+
+        <td>ElaineChengZY</td>
+        <td>Sun Sep 27 15:20:51 2026 +1000</td>
+        <td>refined and fix</td>
+        <td></td>
+
+      </tr>
+
+    </tbody>
+
+</table>
+                </details>
+                
+                
+                <h4>
+                    <a href="https://spatial-exploration-horizontal.github.io/musicfortoddlers/" target="_blank">
+                        Prototype 6: 2D - Timbre
+                    </a>
+                </h4>
+                <p>
+                   This prototype maps distance from the centre of the screen to timbre. The sound becomes more muffled near the centre and brighter further away. Unlike the other prototypes, this mapping uses movement in both directions, allowing me to explore whether a less obvious spatial relationship can still be discovered through interaction.
+                </p>
+
+                <details>
+                    <summary>Commit Logs</summary>
+                    <table>
+
+    <thead><tr>
+
+        <th>Author</th>
+        <th>Date</th>
+        <th>Subject</th>
+        <th>Body</th>
+
+    </tr></thead>
+
+    <tbody>
+
+      <tr>
+
+        <td>ElaineChengZY</td>
+        <td>Wed Aug 26 16:06:28 2026 +1000</td>
+        <td>Initial commit</td>
+        <td></td>
+
+      </tr>
+
+      <tr>
+
+        <td>ElaineChengZY</td>
+        <td>Thu Aug 27 14:47:53 2026 +1000</td>
+        <td>building/ set up</td>
+        <td></td>
+
+      </tr>
+
+      <tr>
+
+        <td>ElaineChengZY</td>
+        <td>Thu Aug 27 14:52:10 2026 +1000</td>
+        <td>overwrite</td>
+        <td></td>
+
+      </tr>
+
+      <tr>
+
+        <td>ElaineChengZY</td>
+        <td>Sat Aug 29 23:34:26 2026 +1000</td>
+        <td>Set up dialog and button</td>
+        <td>Start the D4 note on mousedown and release it on mouseup or mouseleave.</td>
+
+      </tr>
+
+      <tr>
+
+        <td>ElaineChengZY</td>
+        <td>Sun Aug 30 00:04:10 2026 +1000</td>
+        <td>add scale hover feedback for prototype 1</td>
+        <td></td>
+
+      </tr>
+
+      <tr>
+
+        <td>ElaineChengZY</td>
+        <td>Sun Aug 30 00:05:40 2026 +1000</td>
+        <td>update</td>
+        <td></td>
+
+      </tr>
+
+      <tr>
+
+        <td>1.2 pressed scale;</td>
+        <td>undefined</td>
+        <td>undefined</td>
+        <td>undefined</td>
+
+      </tr>
+
+      <tr>
+
+        <td>ElaineChengZY</td>
+        <td>Sun Aug 30 14:54:43 2026 +1000</td>
+        <td>add scale feedback</td>
+        <td>1.3 hover scale;</td>
+
+      </tr>
+
+      <tr>
+
+        <td>ElaineChengZY</td>
+        <td>Sun Aug 30 14:59:58 2026 +1000</td>
+        <td>rename</td>
+        <td></td>
+
+      </tr>
+
+      <tr>
+
+        <td>ElaineChengZY</td>
+        <td>Sun Aug 30 15:17:03 2026 +1000</td>
+        <td>glow feedback for prototype2</td>
+        <td></td>
+
+      </tr>
+
+      <tr>
+
+        <td>ElaineChengZY</td>
+        <td>Sun Aug 30 15:23:25 2026 +1000</td>
+        <td>rearrange file structure</td>
+        <td></td>
+
+      </tr>
+
+      <tr>
+
+        <td>ElaineChengZY</td>
+        <td>Sun Aug 30 15:31:54 2026 +1000</td>
+        <td>complete lift and shadow feedback</td>
+        <td></td>
+
+      </tr>
+
+      <tr>
+
+        <td>ElaineChengZY</td>
+        <td>Sun Aug 30 16:54:31 2026 +1000</td>
+        <td>map whole-page horizontal movement to pitch</td>
+        <td></td>
+
+      </tr>
+
+      <tr>
+
+        <td>ElaineChengZY</td>
+        <td>Sun Aug 30 17:12:16 2026 +1000</td>
+        <td>replace lift feedback with musical note feedback</td>
+        <td></td>
+
+      </tr>
+
+      <tr>
+
+        <td>ElaineChengZY</td>
+        <td>Sun Aug 30 22:31:25 2026 +1000</td>
+        <td>map whole-page vertical movement to volume</td>
+        <td></td>
+
+      </tr>
+
+      <tr>
+
+        <td>ElaineChengZY</td>
+        <td>Sun Aug 30 23:16:25 2026 +1000</td>
+        <td>map centre-to-edge movement to timbre</td>
+        <td></td>
+
+      </tr>
+
+      <tr>
+
+        <td>ElaineChengZY</td>
+        <td>Mon Aug 31 15:36:10 2026 +1000</td>
+        <td>updated</td>
+        <td></td>
+
+      </tr>
+
+      <tr>
+
+        <td>ElaineChengZY</td>
+        <td>Wed Sep 9 15:03:48 2026 +1000</td>
+        <td>delete unused prototype</td>
+        <td></td>
+
+      </tr>
+
+      <tr>
+
+        <td>ElaineChengZY</td>
+        <td>Wed Sep 9 15:17:45 2026 +1000</td>
+        <td>delete unused prototype</td>
+        <td></td>
+
+      </tr>
+
+      <tr>
+
+        <td>ElaineChengZY</td>
+        <td>Wed Sep 9 15:30:46 2026 +1000</td>
+        <td>fixing on main</td>
+        <td></td>
+
+      </tr>
+
+      <tr>
+
+        <td>ElaineChengZY</td>
+        <td>Wed Sep 9 16:04:51 2026 +1000</td>
+        <td>update</td>
+        <td></td>
+
+      </tr>
+
+      <tr>
+
+        <td>ElaineChengZY</td>
+        <td>Wed Sep 9 17:19:49 2026 +1000</td>
+        <td>Update index.html</td>
+        <td></td>
+
+      </tr>
+
+      <tr>
+
+        <td>ElaineChengZY</td>
+        <td>Wed Sep 9 20:03:49 2026 +1000</td>
+        <td>delete unused prototype and create spatial 2D branch</td>
+        <td></td>
+
+      </tr>
+
+      <tr>
+
+        <td>ElaineChengZY</td>
+        <td>Mon Sep 14 17:10:15 2026 +1000</td>
+        <td>Add draggable object and stronger timbre mapping</td>
+        <td></td>
+
+      </tr>
+
+      <tr>
+
+        <td>ElaineChengZY</td>
+        <td>Mon Sep 14 18:06:43 2026 +1000</td>
+        <td>create git commit</td>
+        <td></td>
+
+      </tr>
+
+      <tr>
+
+        <td>ElaineChengZY</td>
+        <td>Sun Sep 27 15:10:05 2026 +1000</td>
+        <td>include picture</td>
+        <td></td>
+
+      </tr>
+
+      <tr>
+
+        <td>ElaineChengZY</td>
+        <td>Sun Sep 27 15:19:32 2026 +1000</td>
+        <td>changing button to picture and adding snap into shadow effect</td>
+        <td></td>
+
+      </tr>
+
+    </tbody>
+
+</table>
+                </details>
+            <p>
+            <a class="form-link" href="https://forms.cloud.microsoft/Pages/ResponsePage.aspx?id=cTYy0b7NF0S01L2yS1Exa6qpoLxQgVVEtR8arKJ0MllUMlJVOFA0UFJGQ05aWlBZQTZQSTRKQTZKRy4u" target="_blank">
+               Peer User Testing Form for Area 2
+            </a>
+            </p>
             </section>
         </main>
 

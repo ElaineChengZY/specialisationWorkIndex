@@ -1,27 +1,11 @@
-/*!!!!!*/
-/*add in your own font imports here*/
-/*remember to update them in the rest of the CSS : eg the body selector*/
 @import url('https://fonts.googleapis.com/css2?family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap');
 
-/*!!!!!*/
-/*change out, and/or add colours to the colour scheme*/
-:root{
-    /* basic 2-bit palette from 1bit Monitor Glow Palette by Polyducks */
-    /* https://lospec.com/palette-list/1bit-monitor-glow */
-    --colour-1: #222323;
-    --colour-2: #f0f6f0;
+/* Background, text and link colours. */
+:root {
+    --colour-1: #2f4638;
+    --colour-2: #f6f5ed;
+    --link-colour: #356346;
 }
-
-/* this swaps the colour order to account for user's OS dark mode */
-/*!!!!!*/
-/*remember to update the colours here too to reflect the above changes*/
-@media (prefers-color-scheme: dark) {
-    :root{
-        --colour-1: #f0f6f0;
-        --colour-2: #222323;
-    }
-}
-
 
 body {
     background-color: var(--colour-2);
@@ -34,19 +18,21 @@ body {
     gap: 1rem;
 }
 
+a { color: var(--link-colour); }
+a:hover { color: #234b32; }
+a:focus-visible, summary:focus-visible { outline: 3px solid #946125; outline-offset: 4px; }
+
 header {
     display: flex;
     justify-content: center;
     margin-block-end: 3rem;
 }
-
 .mainNavContainer {
     flex: 1;
     display: flex;
     justify-content: center;
     gap: 1rem;
 }
-
 nav {
     display: flex;
     flex-direction: column;
@@ -54,64 +40,45 @@ nav {
     flex: 1;
     align-items: flex-end;
 }
-
 main {
     display: flex;
     flex-direction: column;
     align-items: center;
+    min-width: 0;
 }
-
-section {
-    max-width: 80rch;
-}
-
-.firstSectionHeading {
-    margin-top: 0;
-}
-
-aside {
-    visibility: hidden;
-    flex: 1;
-}
-
+section { max-width: 80rch; min-width: 0; width: 100%; }
+.firstSectionHeading { margin-top: 0; }
+aside { visibility: hidden; flex: 1; }
 footer {
     display: flex;
     justify-content: center;
     margin-block-start: 3rem;
 }
+.prose > * + * { margin-block-start: var(--prose-flow, 1em); }
 
-/*technique from Kevin Powell*/
-/*https://youtu.be/CU8Plk-53RU?si=zMpP0Pfbg1SaXeDB&t=255*/
-/*longer post about how this works and the * + * selector*/
-/*https://alistapart.com/article/axiomatic-css-and-lobotomized-owls/*/
-.prose > * + * {
-    margin-block-start: var(--prose-flow, 1em);
+/* The main project link becomes a button. */
+.play-button {
+    display: inline-block;
+    padding: .8rem 1.4rem;
+    border-radius: 8px;
+    background-color: #356346;
+    color: #fff;
+    font-size: 1rem;
+    font-weight: 600;
+    text-decoration: none;
 }
+.play-button:hover { background-color: #234b32; color: #fff; }
 
-/* breakpoints from Material Design Spec https://m3.material.io/foundations/layout/breakpoints/overview */
-/* while sometimes mobile first is recommended, as we will be focused on desktop, we will start there */
-
-/* assumed base sizing is large (1200–1599px) : desktop  */
-
-/* extra-large breakpoint : desktop, ultrawide monitors */
+/* Base layout: 1200–1600px. */
 @media (width > 1600px) {
-
+    body { max-width: 1600px; margin-inline: auto; }
 }
-
-/* expanded breakpoint : phone or tablet in landscape, desktop */
-@media (width < 1200px) {
-    header {
-        margin-block-end: 2rem;
-    }
-    footer {
-        margin-block-start: 2rem;
-    }
+@media (840px <= width < 1200px) {
+    header { margin-block-end: 2rem; }
+    footer { margin-block-start: 2rem; }
 }
-/* medium breakpoint : tablet in portrait */
 @media (width < 840px) {
-    header {
-        margin-block-end: 1rem;
-    }
+    header { margin-block-end: 1rem; }
     .mainNavContainer {
         flex-direction: column;
         justify-content: flex-start;
@@ -123,55 +90,22 @@ footer {
         max-width: 80rch;
         justify-content: space-between;
         flex-direction: row;
+        flex-wrap: wrap;
+        gap: 1rem;
     }
-    main {
-        flex: 1;
-    }
-    aside {
-        flex: 0;
-    }
-    footer {
-        margin-block-start: 1rem;
-    }
+    main { flex: 1; width: 100%; }
+    aside { flex: 0; }
+    footer { margin-block-start: 1rem; }
 }
-/* compact breakpoint : phone in portrait */
-@media (width < 600px) {
-
-}
-.commit-log {
-    margin-top: 1.5rem;
-}
-
-.commit-log summary {
-    cursor: pointer;
-    font-weight: bold;
-    margin-bottom: 1rem;
-}
-
-.table-wrapper {
-    overflow-x: auto;
-    margin-top: 1rem;
-}
-
-.commit-log table {
-    width: 100%;
-    border-collapse: collapse;
-    font-size: 0.9rem;
-}
-
-.commit-log th,
-.commit-log td {
-    padding: 0.75rem;
-    border: 1px solid #ccc;
+.commit-log { margin-top: 1.5rem; }
+.commit-log summary { cursor: pointer; font-weight: bold; margin-bottom: 1rem; }
+.table-wrapper { overflow-x: auto; margin-top: 1rem; }
+.commit-log table { width: 100%; border-collapse: collapse; font-size: .9rem; }
+.commit-log th, .commit-log td {
+    padding: .75rem;
+    border: 1px solid #c9d1c4;
     text-align: left;
     vertical-align: top;
 }
-
-.commit-log th {
-    font-weight: bold;
-}
-
-.form-link {
-   display: flex;
-   justify-content: center;
-}
+.commit-log th { font-weight: bold; background-color: #e7edde; }
+.form-link { display: flex; justify-content: center; }

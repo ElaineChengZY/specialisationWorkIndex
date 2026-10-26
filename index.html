@@ -37,10 +37,516 @@
         </nav>
 
         <main>
+            
             <section id="intro-section">
-                <p> Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusantium architecto asperiores deleniti, dolore, fugiat harum ipsum magni natus nemo nobis quos, totam veniam. Assumenda eaque labore minus praesentium quidem sapiente?Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusantium architecto asperiores deleniti, dolore, fugiat harum ipsum magni natus nemo nobis quos, totam veniam. Assumenda eaque labore minus praesentium quidem sapiente?</p>
+                 <h2>
+                    <a href ="https://elainechengzy.github.io/musicfortoddlers/" target="_blank">
+                        Play Musical Garden
+                    </a>
+                </h2>
+
+                <h2 class="firstSectionHeading">Brief Synopsis</h2>
+                <p> Musical Garden is a browser-based audio instrument designed for toddlers and young children with minimal language skills. It uses familiar garden objects, simple visual matching and direct movement instead of technical music controls or written instructions.</p>
+                <p>Players choose colourful garden objects and drag them towards their matching shadows in the garden. Each object produces a different musical note, while horizontal movement changes its pitch. Visual feedback such as scaling, animated musical notes and snapping helps make the interaction easier to understand.</p>
+                
+                <h3>Scenario 3: Musical Toy for Toddlers</h3>
+                <h4>Prompt:</h4>
+                <p>Design a way for young children with minimal language skills to explore music.</p>
+                <h4>Context:</h4>
+                <p>Browser based musical instruments offer users the ability to dynamically perform music and explore complex audio design. While these interactions allow for a depth of control, they can be intimidating for many adult users, let alone young children whose language skills are still developing.</p>
+
+                <h2 class="firstSectionHeading">Response to the Scenario</h2>
+                <p>Musical Garden responds to this scenario by replacing technical music controls with familiar objects and direct interaction. Instead of using sliders, buttons or musical terminology, players explore sound by pressing and dragging colourful garden objects.</p>
+                <p>The matching shadows provide a simple visual goal without relying heavily on written instructions. Each object follows the same interaction pattern, making the experience easier to learn: press to activate sound, drag to change pitch, move towards the matching shadow, and release to complete the match.</p>
+                <p>This allows children to explore the relationship between movement, sound and visual feedback through play rather than through instructions.</p>
+
+                <h2 class="firstSectionHeading">Core Interactive Features</h2>
+                <h3>Musical Exploration Through Movement</h3>
+                <p>Each garden object produces a different starting note, while horizontal dragging changes its pitch. Moving an object to the left lowers the pitch, while moving it to the right raises it.</p>
+                <p>This Spatial Input technique replaces technical music controls with direct movement, allowing children to explore sound in a simple and playful way.</p>
+               
+                <h3>Visual Feedback</h3>
+                <p>Pressing an object makes it slightly larger, while animated musical notes appear as the sound continues. These responses help communicate that the object is active and producing sound without relying on written instructions.</p>
+               
+                <h3>Matching and Completion</h3>
+                <p>Players drag colourful garden objects towards their matching grey shadows. When an object approaches the correct target, the shadow becomes more noticeable.</p>
+                <p>Releasing the object close to its target makes it snap into place and the shadow disappears, giving the interaction a clear goal and completion state.</p>
+
+                <h2 class="firstSectionHeading">Design System</h2>
+                <p>Musical Garden uses a colourful and friendly 2D illustration style to create a playful environment for young children. Bright colours are used for draggable objects, while matching targets are shown in greyscale with lower opacity. This creates a clear visual difference between the object the player can interact with and its destination.</p>
+                <p>Motion is also used as part of the feedback system. Scaling communicates activation, animated musical notes show that sound is active, target changes indicate that the player is close to a correct match, and snapping communicates successful completion.</p>
+                <p>The layout is responsive across the required screen sizes so that the garden, draggable objects and matching targets remain visible and usable. Object size and spacing can also be adjusted across the experience to introduce more challenge while keeping the interaction pattern consistent.</p>
+
+           <details class="commit-log">
+                <summary>Commit Logs</summary>
+                 <table>
+
+    <thead><tr>
+
+        <th>Author</th>
+        <th>Date</th>
+        <th>Subject</th>
+        <th>Body</th>
+
+    </tr></thead>
+
+    <tbody>
+
+      <tr>
+
+        <td>ElaineChengZY</td>
+        <td>Wed Aug 26 16:06:28 2026 +1000</td>
+        <td>Initial commit</td>
+        <td></td>
+
+      </tr>
+
+      <tr>
+
+        <td>ElaineChengZY</td>
+        <td>Thu Aug 27 14:47:53 2026 +1000</td>
+        <td>building/ set up</td>
+        <td></td>
+
+      </tr>
+
+      <tr>
+
+        <td>ElaineChengZY</td>
+        <td>Thu Aug 27 14:52:10 2026 +1000</td>
+        <td>overwrite</td>
+        <td></td>
+
+      </tr>
+
+      <tr>
+
+        <td>ElaineChengZY</td>
+        <td>Sat Aug 29 23:34:26 2026 +1000</td>
+        <td>Set up dialog and button</td>
+        <td>Start the D4 note on mousedown and release it on mouseup or mouseleave.</td>
+
+      </tr>
+
+      <tr>
+
+        <td>ElaineChengZY</td>
+        <td>Sun Aug 30 00:04:10 2026 +1000</td>
+        <td>add scale hover feedback for prototype 1</td>
+        <td></td>
+
+      </tr>
+
+      <tr>
+
+        <td>ElaineChengZY</td>
+        <td>Sun Aug 30 00:05:40 2026 +1000</td>
+        <td>update</td>
+        <td></td>
+
+      </tr>
+
+      <tr>
+
+        <td>1.2 pressed scale;</td>
+        <td>undefined</td>
+        <td>undefined</td>
+        <td>undefined</td>
+
+      </tr>
+
+      <tr>
+
+        <td>ElaineChengZY</td>
+        <td>Sun Aug 30 14:54:43 2026 +1000</td>
+        <td>add scale feedback</td>
+        <td>1.3 hover scale;</td>
+
+      </tr>
+
+      <tr>
+
+        <td>ElaineChengZY</td>
+        <td>Sun Aug 30 14:59:58 2026 +1000</td>
+        <td>rename</td>
+        <td></td>
+
+      </tr>
+
+      <tr>
+
+        <td>ElaineChengZY</td>
+        <td>Sun Aug 30 15:17:03 2026 +1000</td>
+        <td>glow feedback for prototype2</td>
+        <td></td>
+
+      </tr>
+
+      <tr>
+
+        <td>ElaineChengZY</td>
+        <td>Sun Aug 30 15:23:25 2026 +1000</td>
+        <td>rearrange file structure</td>
+        <td></td>
+
+      </tr>
+
+      <tr>
+
+        <td>ElaineChengZY</td>
+        <td>Sun Aug 30 15:31:54 2026 +1000</td>
+        <td>complete lift and shadow feedback</td>
+        <td></td>
+
+      </tr>
+
+      <tr>
+
+        <td>ElaineChengZY</td>
+        <td>Sun Aug 30 16:54:31 2026 +1000</td>
+        <td>map whole-page horizontal movement to pitch</td>
+        <td></td>
+
+      </tr>
+
+      <tr>
+
+        <td>ElaineChengZY</td>
+        <td>Sun Aug 30 17:12:16 2026 +1000</td>
+        <td>replace lift feedback with musical note feedback</td>
+        <td></td>
+
+      </tr>
+
+      <tr>
+
+        <td>ElaineChengZY</td>
+        <td>Sun Aug 30 22:31:25 2026 +1000</td>
+        <td>map whole-page vertical movement to volume</td>
+        <td></td>
+
+      </tr>
+
+      <tr>
+
+        <td>ElaineChengZY</td>
+        <td>Sun Aug 30 23:16:25 2026 +1000</td>
+        <td>map centre-to-edge movement to timbre</td>
+        <td></td>
+
+      </tr>
+
+      <tr>
+
+        <td>ElaineChengZY</td>
+        <td>Mon Aug 31 15:36:10 2026 +1000</td>
+        <td>updated</td>
+        <td></td>
+
+      </tr>
+
+      <tr>
+
+        <td>ElaineChengZY</td>
+        <td>Wed Sep 9 15:03:48 2026 +1000</td>
+        <td>delete unused prototype</td>
+        <td></td>
+
+      </tr>
+
+      <tr>
+
+        <td>ElaineChengZY</td>
+        <td>Wed Sep 9 15:17:45 2026 +1000</td>
+        <td>delete unused prototype</td>
+        <td></td>
+
+      </tr>
+
+      <tr>
+
+        <td>ElaineChengZY</td>
+        <td>Wed Sep 9 15:30:46 2026 +1000</td>
+        <td>fixing on main</td>
+        <td></td>
+
+      </tr>
+
+      <tr>
+
+        <td>ElaineChengZY</td>
+        <td>Wed Sep 9 16:04:51 2026 +1000</td>
+        <td>update</td>
+        <td></td>
+
+      </tr>
+
+      <tr>
+
+        <td>ElaineChengZY</td>
+        <td>Wed Sep 9 16:43:51 2026 +1000</td>
+        <td>Changing the title from main to branch 2</td>
+        <td></td>
+
+      </tr>
+
+      <tr>
+
+        <td>ElaineChengZY</td>
+        <td>Wed Sep 9 16:49:36 2026 +1000</td>
+        <td>create a musical note feedback</td>
+        <td></td>
+
+      </tr>
+
+      <tr>
+
+        <td>ElaineChengZY</td>
+        <td>Wed Sep 9 16:51:02 2026 +1000</td>
+        <td>fixing</td>
+        <td></td>
+
+      </tr>
+
+      <tr>
+
+        <td>ElaineChengZY</td>
+        <td>Wed Sep 9 16:51:41 2026 +1000</td>
+        <td>delete unused prototype</td>
+        <td></td>
+
+      </tr>
+
+      <tr>
+
+        <td>ElaineChengZY</td>
+        <td>Wed Sep 9 17:19:49 2026 +1000</td>
+        <td>Update index.html</td>
+        <td></td>
+
+      </tr>
+
+      <tr>
+
+        <td>ElaineChengZY</td>
+        <td>Wed Sep 9 19:29:24 2026 +1000</td>
+        <td>delete unused prototype and create spatial input</td>
+        <td>control pitch in horizontal</td>
+
+      </tr>
+
+      <tr>
+
+        <td>ElaineChengZY</td>
+        <td>Wed Sep 9 19:51:40 2026 +1000</td>
+        <td>update title to branch 4</td>
+        <td></td>
+
+      </tr>
+
+      <tr>
+
+        <td>ElaineChengZY</td>
+        <td>Mon Sep 14 16:29:26 2026 +1000</td>
+        <td>Add continuous musical note feedback</td>
+        <td>Added multiple animated musical notes that continue appearing while the garden button is held.</td>
+
+      </tr>
+
+      <tr>
+
+        <td>ElaineChengZY</td>
+        <td>Mon Sep 14 16:59:21 2026 +1000</td>
+        <td>Add draggable object to Spatial Horizontal</td>
+        <td></td>
+
+      </tr>
+
+      <tr>
+
+        <td>ElaineChengZY</td>
+        <td>Mon Sep 14 18:04:28 2026 +1000</td>
+        <td>create git commit</td>
+        <td></td>
+
+      </tr>
+
+      <tr>
+
+        <td>ElaineChengZY</td>
+        <td>Mon Sep 14 18:05:36 2026 +1000</td>
+        <td>create git commit</td>
+        <td></td>
+
+      </tr>
+
+      <tr>
+
+        <td>ElaineChengZY</td>
+        <td>Wed Sep 23 14:54:29 2026 +1000</td>
+        <td>include text</td>
+        <td></td>
+
+      </tr>
+
+      <tr>
+
+        <td>ElaineChengZY</td>
+        <td>Sat Sep 26 21:55:12 2026 +1000</td>
+        <td>changing button into picture</td>
+        <td></td>
+
+      </tr>
+
+      <tr>
+
+        <td>ElaineChengZY</td>
+        <td>Sat Sep 26 22:26:50 2026 +1000</td>
+        <td>fixed the size of the picture</td>
+        <td></td>
+
+      </tr>
+
+      <tr>
+
+        <td>ElaineChengZY</td>
+        <td>Sat Sep 26 22:30:17 2026 +1000</td>
+        <td>refined prototype-label style</td>
+        <td></td>
+
+      </tr>
+
+      <tr>
+
+        <td>ElaineChengZY</td>
+        <td>Sat Sep 26 22:32:08 2026 +1000</td>
+        <td>change the size of the object</td>
+        <td></td>
+
+      </tr>
+
+      <tr>
+
+        <td>ElaineChengZY</td>
+        <td>Sun Sep 27 13:51:17 2026 +1000</td>
+        <td>changing button to image</td>
+        <td></td>
+
+      </tr>
+
+      <tr>
+
+        <td>ElaineChengZY</td>
+        <td>Sun Sep 27 14:26:33 2026 +1000</td>
+        <td>adding snap into shadow effect</td>
+        <td></td>
+
+      </tr>
+
+      <tr>
+
+        <td>ElaineChengZY</td>
+        <td>Sun Sep 27 21:52:54 2026 +1000</td>
+        <td>Update Commit Logs</td>
+        <td></td>
+
+      </tr>
+
+      <tr>
+
+        <td>ElaineChengZY</td>
+        <td>Sun Sep 27 22:12:20 2026 +1000</td>
+        <td>Update Commit Logs</td>
+        <td></td>
+
+      </tr>
+
+      <tr>
+
+        <td>ElaineChengZY</td>
+        <td>Wed Oct 7 14:18:02 2026 +1100</td>
+        <td>deleted previous prototype in main</td>
+        <td></td>
+
+      </tr>
+
+      <tr>
+
+        <td>ElaineChengZY</td>
+        <td>Wed Oct 7 14:49:02 2026 +1100</td>
+        <td>Merge branch 'SpatialHorizontal'</td>
+        <td></td>
+
+      </tr>
+
+      <tr>
+
+        <td>ElaineChengZY</td>
+        <td>Wed Oct 7 14:55:11 2026 +1100</td>
+        <td>change title name</td>
+        <td></td>
+
+      </tr>
+
+      <tr>
+
+        <td>ElaineChengZY</td>
+        <td>Wed Oct 7 15:01:59 2026 +1100</td>
+        <td>add and updated scale feedback to final design</td>
+        <td></td>
+
+      </tr>
+
+      <tr>
+
+        <td>ElaineChengZY</td>
+        <td>Wed Oct 7 15:33:09 2026 +1100</td>
+        <td>add favicon</td>
+        <td></td>
+
+      </tr>
+
+      <tr>
+
+        <td>ElaineChengZY</td>
+        <td>Wed Oct 7 16:17:21 2026 +1100</td>
+        <td>Merge branch 'NoteFeedback'</td>
+        <td></td>
+
+      </tr>
+
+      <tr>
+
+        <td>ElaineChengZY</td>
+        <td>Tue Oct 20 01:31:26 2026 +1100</td>
+        <td>Add Flower and Bee matching interactions and responsive styles</td>
+        <td></td>
+
+      </tr>
+
+      <tr>
+
+        <td>ElaineChengZY</td>
+        <td>Tue Oct 20 19:53:32 2026 +1100</td>
+        <td>Add more garden assets and improve responsive tray layout</td>
+        <td></td>
+
+      </tr>
+
+      <tr>
+
+        <td>ElaineChengZY</td>
+        <td>Wed Oct 21 01:19:33 2026 +1100</td>
+        <td>Expand garden assets</td>
+        <td> add free placement and style intro dialog, Expand the garden to 15 assets with individual base notes and matching shadows.</td>
+
+      </tr>
+
+    </tbody>
+                 </table>
             </section>
         </main>
+
 
         <!-- this is an empty element which helps with spacing -->
         <aside></aside>

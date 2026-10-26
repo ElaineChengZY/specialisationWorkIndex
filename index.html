@@ -67,16 +67,21 @@
                 <p>This Spatial Input technique replaces technical music controls with direct movement, allowing children to explore sound in a simple and playful way.</p>
                
                 <h3>Visual Feedback</h3>
-                <p>Pressing an object makes it slightly larger, while animated musical notes appear as the sound continues. These responses help communicate that the object is active and producing sound without relying on written instructions.</p>
-               
+                <p>Pressing and holding an object enlarges it to show that it is active. Animated musical notes continue appearing while sound is playing; they indicate ongoing sound rather than a particular pitch. When the object approaches its matching shadow, both enlarge slightly to signal that releasing it will complete the match. These visual cues distinguish activation, ongoing sound and readiness to match without requiring children to read instructions.</p>
+                
                 <h3>Matching and Completion</h3>
-                <p>Players drag colourful garden objects towards their matching grey shadows. When an object approaches the correct target, the shadow becomes more noticeable.</p>
-                <p>Releasing the object close to its target makes it snap into place and the shadow disappears, giving the interaction a clear goal and completion state.</p>
+                <p>Players drag colourful garden objects towards their matching grey shadows. When an object is close to its correct target, both the object and target enlarge slightly to indicate that it is ready to match.</p>
+                <p>Releasing an object within 80 pixels of its matching target's centre makes it snap into place and hides the shadow. If an unmatched object is released outside this range, it returns to the tray. This gives children a clear goal while allowing near matches without requiring precise alignment.</p>
+                <p>After a successful match, children can pick up the object again to explore its sound and place it freely within the garden. This allows play to continue beyond the initial matching task.</p>
+
+                <h2 class="firstSectionHeading">Final Design Decisions</h2>
+                <p>I combined scale feedback with animated musical notes because they communicate different aspects of the interaction. Scaling shows that the object has been activated, while continuing musical notes indicate that sound is still playing. I did not retain glow feedback because these two responses already communicate activation and ongoing sound.</p>
+                <p>I selected horizontal movement to control pitch, giving children one consistent relationship to explore: moving left lowers the pitch and moving right raises it. I left out the volume and timbre mappings to avoid introducing several different sound-control rules into the final matching activity.</p>
 
                 <h2 class="firstSectionHeading">Design System</h2>
                 <p>Musical Garden uses a colourful and friendly 2D illustration style to create a playful environment for young children. Bright colours are used for draggable objects, while matching targets are shown in greyscale with lower opacity. This creates a clear visual difference between the object the player can interact with and its destination.</p>
                 <p>Motion is also used as part of the feedback system. Scaling communicates activation, animated musical notes show that sound is active, target changes indicate that the player is close to a correct match, and snapping communicates successful completion.</p>
-                <p>The layout is responsive across the required screen sizes so that the garden, draggable objects and matching targets remain visible and usable. Object size and spacing can also be adjusted across the experience to introduce more challenge while keeping the interaction pattern consistent.</p>
+                <p>The object tray uses five columns below 840px, eight columns between 840px and 1199px, and fifteen columns at 1200-1600px and above 1600px. This keeps all fifteen objects visible without horizontal scrolling. Garden objects and their matching shadows scale together to preserve their visual correspondence. JavaScript measures the tray's height and adjusts the garden area above it, keeping targets within the visible garden when the window is resized.</p>
 
            <details class="commit-log">
                 <summary>Commit Logs</summary>
@@ -144,15 +149,6 @@
         <td>Sun Aug 30 00:05:40 2026 +1000</td>
         <td>update</td>
         <td></td>
-
-      </tr>
-
-      <tr>
-
-        <td>1.2 pressed scale;</td>
-        <td>undefined</td>
-        <td>undefined</td>
-        <td>undefined</td>
 
       </tr>
 
